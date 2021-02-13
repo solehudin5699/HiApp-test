@@ -1,10 +1,10 @@
-import db from "../../../services/firebase";
+import {firestore} from "../../../services/firebase";
 import { deleteVictim as del, reset } from "./actionTypes";
 
 export const deleteVictim = (data:any) => {
   return (dispatch:any) => {
     dispatch(deleteVictimPending());
-    let document = db.doc(`/victims/${data.id}`);
+    let document = firestore.doc(`/victims/${data.id}`);
     document
       .get()
       .then((doc:any) => {

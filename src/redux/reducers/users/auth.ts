@@ -1,4 +1,4 @@
-import { login} from "../../actions/users/actionTypes";
+import { login, logout} from "../../actions/users/actionTypes";
 
 const initialState = {
   user: {},
@@ -13,6 +13,12 @@ const authReducer = (prevState = initialState, action:any) => {
         user: {phone:action.payload},
         isLogin:true
       };
+    case logout.logout:
+    return {
+      ...prevState,
+      user: {},
+      isLogin:false
+    };
     default:
       return prevState;
   }
