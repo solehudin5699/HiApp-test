@@ -55,9 +55,9 @@ export default function ConfirmDelete(props:any) {
           </div>
           <div className="modalDelete_btn">
           <h3>Delete this victim ?</h3>
-          <div className="btnCancel_Delete">
-          <button  className="btnCancel_delete" onClick={() => setShowModal(false)}>Cancel</button>
-          <button className="btnDeleteVictim" onClick={() => handleDelete()}>{isDeletePending?"Loading...":"Delete"} </button>
+          <div className="btnCancelDelete">
+            <button  className="btnCancel_delete" onClick={() => setShowModal(false)}>Cancel</button>
+            <button className="btnDeleteVictim" onClick={() => handleDelete()}>{isDeletePending?"Loading...":"Delete"} </button>
           </div>
         </div>
         </div>

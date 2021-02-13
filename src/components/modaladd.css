@@ -26,7 +26,7 @@
   overflow-y: scroll;
   background-color: #FFFFFF;
 }
-.btnCancelAdd, .btnCancel_Delete{
+.btnCancelAdd, .btnCancelDelete{
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -74,9 +74,12 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .modalDelete_btn h3{
   color: #FFFFFF;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
