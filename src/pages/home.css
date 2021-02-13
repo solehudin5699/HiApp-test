@@ -1,0 +1,25 @@
+.home_container{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgb(235, 90, 71), rgb(235, 135, 215));
+}
+.btn_addContainer{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 0, 55);
+  width: 55px;
+  height: 55px;
+  border-radius: 55px;
+  cursor: pointer;
+  box-shadow: -1px 4px 20px -6px rgba(63, 45, 45, 0.3);
+  z-index: 1000;
+}
+.icon_add{
+  color: azure;
+}

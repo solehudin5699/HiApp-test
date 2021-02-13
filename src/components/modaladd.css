@@ -1,0 +1,82 @@
+.modalAdd_container{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
+.modalAdd{
+  background-color: rgb(235, 90, 71);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.titleAddModal{
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleAddModal h3{
+  font-size: 19px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.contentForm{
+  flex: 1;
+  overflow-y: scroll;
+  background-color: #FFFFFF;
+}
+.btnCancelAdd{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 7px;
+  margin-bottom: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.btnCancel_add{
+  width: 30%;
+  background-color: #FFFFFF;
+  color: red;
+  height: 50px;
+  border-radius: 15px;
+}
+.btnAddVictim{
+  width: 60%;
+  height: 50px;
+  border-radius: 15px;
+  color: #FFFFFF;
+  background: cornflowerblue;
+}
+.photoContainer{
+  width: 100vw;
+  position: relative;
+  cursor: pointer;
+}
+.photoContainer img{
+  width: 100vw;
+}
+.photoContainer .selectPhoto{
+  position: absolute;
+  bottom: 30px;
+  width: 100vw;
+  text-align: center;
+  color: black;
+}
+.modalDelete{
+  position: absolute;
+  bottom: 0;
+}
+.modalDelete_btn{
+  width: 100vw;
+  background: rgb(235, 90, 71);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+}
+.modalDelete_btn h3{
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

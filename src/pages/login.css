@@ -1,0 +1,60 @@
+.containerLogin{ 
+  margin:0; 
+  width:100vw;
+  height:100vh;
+  overflow-y:scroll;
+  background: linear-gradient(to bottom, rgb(235, 90, 71), rgb(235, 135, 215));
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.loginTitle{
+  flex: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.897);
+  /* color: rgb(47, 13, 238); */
+}
+.loginTitle > h1{
+  font-size: 30px;
+}
+.loginTitle > p{
+  font-size: 15px;
+  margin-top: 0;
+}
+.form{
+  flex: 0.7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.phone{
+  width: 90%;
+  border-radius: 10px;
+  outline: none;
+  height: 45px;
+  border: none;
+  padding-left: 10px;
+  padding-left: 10px;
+}
+.phone::placeholder{
+  font-size: 12px;
+}
+.btnLogin{
+  width: 90%;
+  border-radius: 10px;
+  height: 45px;
+  margin-top: 15px;
+  outline: none;
+  /* background-color: rgb(47, 13, 238); */
+  background-color: rgb(134, 71, 235);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
