@@ -23,7 +23,15 @@ export default function ModalUpdate(props:any) {
   const {isUpdatePending, isUpdateFulfilled, isUpdateRejected} = useSelector((state:any) => state.victim)
   const dispatch = useDispatch()
   const handleUpdate=()=>{
-    dispatch(updateVictim({...data, id:oldData.id}))
+    let newData={
+      ...data, id:oldData.id
+    }
+    if(data.photo){
+      dispatch(updateVictim(newData))
+    } else {
+      newData.photo=oldData.photo
+      dispatch(updateVictim(newData))
+    }
   }
   useEffect(() => {
     if(isUpdateRejected||isUpdateFulfilled){
